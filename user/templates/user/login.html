@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+</head>
+<body>
+	<h1>log In</h1>
+	<div class="content-section">
+	<form method="POST">
+	    {% csrf_token %}
+	    <fieldset class="form-group">
+	        <legend class="border-bottom mb-4">log in</legend>
+	        {{ form.as_p }}
+	    </fieldset>
+	    <div class="form-group">
+	        <button class="btn btn-outline-info" type="submit">login</button>
+	    </div>
+	</form>
+	</div>
+</body>
+</html>
